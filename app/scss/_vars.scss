@@ -1,0 +1,35 @@
+$accent: #fe3e57;
+$bg: #f6f6f6;
+$title: #29282d;
+
+%Quicksand-400 {
+ font-family: 'Quicksand-Regular', sans-serif;
+ font-weight: 400;
+}
+
+%Quicksand-500 {
+ font-family: 'Quicksand-Medium', sans-serif;
+ font-weight: 500;
+}
+
+%Roboto-400 {
+ font-family: 'Roboto-Regular';
+ font-weight: 400;
+}
+
+%Roboto-500 {
+ font-family: 'Roboto-Medium';
+ font-weight: 500;
+}
+
+%Roboto-700 {
+ font-family: 'Roboto-Bold';
+ font-weight: 700;
+}
+
+@function max($numbers...) {
+ @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+ @return m#{i}n(#{$numbers});
+}

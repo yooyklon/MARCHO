@@ -1,0 +1,53 @@
+html {
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100%;
+}
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+body {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ @extend %Quicksand-500;
+ font-size: 16px;
+ line-height: 26px;
+ color: #8d8d8d;
+}
+
+.main {
+ flex-grow: 1;
+}
+
+a {
+ text-decoration: none;
+ color: inherit;
+}
+
+.container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 15px;
+}
+
+.btn {
+ padding: 20px 25px;
+ display: inline-block;
+ @extend %Roboto-400;
+ font-size: 16px;
+ line-height: 1;
+ color: #ffffff;
+ background-color: $accent;
+ box-shadow: 0 7px 20px rgba(255, 17, 48, 0.3);
+ text-transform: uppercase;
+ border: none;
+ cursor: pointer;
+}

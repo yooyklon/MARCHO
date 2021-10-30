@@ -3,4 +3,162 @@
 @import 'reset';
 @import 'global';
 
+.header {
+ padding: 40px 0;
+ &__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+}
+
+.menu {
+ &__list {
+  display: flex;
+ }
+ &__list-item + .menu__list-item {
+  margin-left: 37px;
+ }
+ &__list-link {
+  @extend %Roboto-400;
+  color: $title;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: all 0.4s;
+  &:hover {
+   padding-bottom: 5px;
+   @extend %Roboto-700;
+   color: $accent;
+   border-bottom: 1px solid $accent;
+  }
+ }
+}
+
+.user-nav {
+ &__list {
+  display: flex;
+ }
+ &__list-item {
+  position: relative;
+ }
+ &__list-item + .user-nav__list-item {
+  margin-left: 25px;
+ }
+ &__list-item-num {
+  position: absolute;
+  top: -10px;
+  right: -14px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: $accent;
+  border-radius: 50%; 
+ }
+}
+
+.footer {
+ background-color: $bg;
+ &__top {
+  padding: 76px 0 41px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+ }
+ &__box + .footer__box {
+  margin-left: 30px;
+ }
+ &__box:nth-child(1) {
+  max-width: 270px;
+ }
+ &__box:nth-child(2) {
+  max-width: 170px;
+ }
+ &__box:nth-child(3) {
+  max-width: 170px;
+ }
+ &__box:nth-child(4) {
+  max-width: 470px;
+ }
+ &__top-logo {
+  display: inline-block;
+  margin-bottom: 35px;
+ }
+ &__top-address,
+ .footer__top-email,
+ .footer__top-phone {
+  display: block;
+ }
+ &__top-address {
+  margin-bottom: 15px;
+ }
+ &__top-email {
+  margin-bottom: 15px;
+ }
+ &__top-phone {
+  margin-bottom: 38px;
+ }
+ &__title {
+  margin-bottom: 51px;
+  @extend %Roboto-500;
+  font-size: 22px;
+  line-height: 1;
+  color: $title;
+ }
+ &__list-item {
+  margin-bottom: 15px;
+ }
+ &__text {
+  margin-bottom: 29px;
+ }
+ &__form {
+  display: flex;
+ }
+ &__form-input {
+  margin-right: 10px;
+  padding: 19px 17px;
+  flex-grow: 1;
+  background-color: #ffffff;
+  box-shadow: 0 7px 20px rgba(192, 192, 192, 0.3);
+  border: none;
+ }
+ &__bottom {
+  padding: 31px 0;
+  display: flex;
+  justify-content: space-between;
+ }
+ &__wallet-list {
+  display: flex;
+ }
+ &__wallet-item + .footer__wallet-item {
+  margin-left: 42px;
+ }
+}
+
+.social {
+ &__list {
+  display: flex;
+ }
+ &__list-item + .social__list-item {
+  margin-left: 19px;
+ }
+ &__list-link {
+  path {
+   fill: #8d8d8d;
+   transition: all 0.4s;
+  }
+ }
+ &__list-link:hover {
+  path {
+   fill: $accent;
+  }
+ }
+}
+
+
+
+
 @import 'media';
