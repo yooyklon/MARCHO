@@ -51,3 +51,12 @@ a {
  border: none;
  cursor: pointer;
 }
+
+.title {
+  color: $title;
+  @extend %Roboto-700;
+  font-size: 48px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -23,6 +23,7 @@ function styles() {                                         // функция д
 function scripts() {                                        // Функция для объединения файлов js и их миницикации
   return src([                                              // выбираем все файлы которые хотим объединить
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))                              // С помощью плагина concat даём имя конечному файлу 
