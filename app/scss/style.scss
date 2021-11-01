@@ -602,6 +602,66 @@
  }
 }
 
+.top {
+  &__container {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 136px 0 140px;
+    background: url(../images/top/top-banner.jpg) center center/cover no-repeat;
+  }
+  &__title {
+    margin-bottom: 34px;
+  }
+}
+
+.login {
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 120px 0;
+  &__links {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+   padding: 0 30px;
+   @extend %Roboto-400;
+   font-size: 22px;
+   color: #909090;
+   text-transform: uppercase;
+  }
+  &__form-label {
+    display: block;
+  }
+  &__link--active {
+    color: $accent;
+  }
+  &__form-input {
+    width: 100%;
+    height: 60px;
+    margin: 5px 0 40px;
+    padding: 15px 20px;
+    border: none;
+    background-color: $bg;
+  }
+  &__form-btn {
+   width: 100%;
+   margin: 20px 0;
+   padding: 24px;
+   @extend %Roboto-400;
+   line-height: 0;
+   letter-spacing: 3.2px;
+   color: #ffffff;
+   text-transform: uppercase;
+   border: none;
+   background-color: #292929;
+   cursor: pointer;
+  }
+  &__form-link {
+    color: $accent;
+  }
+}
+
 
 
 
