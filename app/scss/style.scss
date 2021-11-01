@@ -644,11 +644,15 @@
     border: none;
     background-color: $bg;
   }
+  &__form-text {
+    margin-bottom: 30px;
+  }
   &__form-btn {
    width: 100%;
    margin: 20px 0;
    padding: 24px;
    @extend %Roboto-400;
+   font-size: 16px;
    line-height: 0;
    letter-spacing: 3.2px;
    color: #ffffff;
